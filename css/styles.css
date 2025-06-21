@@ -1,0 +1,79 @@
+:root{
+  --color-mint-green: hsl(120, 100%, 80%);
+  --color-pale-green: hsl(120, 100%, 97%);
+  --color-blue: hsl(202, 91%, 69%);
+  --color-pale-blue: hsl(180, 100%, 80%);
+  --shadow: hsla(0, 0%, 0%, 0.333);
+}
+
+body {
+  background-color: var(--lt-color-gray-600);
+}
+
+p,
+a {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  height: 160px;
+  background-color: var(--color-mint-green);
+  display: flex;
+  align-items: center;
+}
+
+.banner p {
+  padding: 0 50px;
+  font-family: "Permanent Marker", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+}
+
+.nav-panel {
+  padding: 8px;
+  background-color: var(--color-blue);
+}
+.nav-panel a {
+  color: black;
+  font-weight: 700;
+}
+
+#markdown-container {
+  margin: 16px auto;
+  padding: 16px 24px;
+  background-color: var(--color-pale-green);
+}
+
+blockquote  {
+  background-color: var(--color-pale-blue);
+  border-left: 8px solid var(--color-blue);
+  padding: 4px 12px;
+  box-shadow: 4px 4px var(--shadow);
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+code,
+#markdown-container a {
+  background-color: white;
+  font-weight: 600;
+  border: 0;
+}
+
+pre {
+  background-color: white;
+  border: 2px solid var(--lt-color-gray-600);
+  border-radius: 8px;
+  padding: 4px 4px 4px 16px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width:400px) {
+  .banner {
+    height:320px;
+  }
+  
+}
