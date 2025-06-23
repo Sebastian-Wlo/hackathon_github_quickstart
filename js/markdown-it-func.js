@@ -15,12 +15,14 @@ $(document).ready(function() {
           // Convert the Markdown to HTML.
           let html;
           html = md.render(markdown).replaceAll(`<a `, `<a target="_blank" `);
-
+          // Remove h1 header
+          html = html.replace(/<h1>.*<\/h1>/, "");
           // Print the HTML to #content using jQuery.
           $("#markdown-container").html(html);
         }
-      });
+      }).then()
       $()
     });
 
+    
     
