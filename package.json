@@ -1,9 +1,8 @@
 {
-  "homepage": "https://Sebastian-Wlo.github.io/hackathon_github_quickstart/",
   "name": "hackathon_github_quickstart",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "homepage": "https://Sebastian-Wlo.github.io/hackathon_github_quickstart",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
