@@ -1,12 +1,12 @@
 {
-  "homepage": "https://Sebastian-Wlo.github.io/hackathon_github_quickstart",
+  "homepage": "https://Sebastian-Wlo.github.io/hackathon_github_quickstart/",
   "name": "hackathon_github_quickstart",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" ,
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
