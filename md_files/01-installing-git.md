@@ -21,7 +21,7 @@ You can use either WSL (Linux Subsystem for Windows), or download Git For Window
 
 WSL is fantastic, but setting it up is a bit beyond the scope of this little intro - if you want to use it, you can follow the guide on [contribute.freecodecamp.org/](https://contribute.freecodecamp.org/how-to-setup-wsl/), up to, and including, "Installing a Code Editor". If that's what you did - congratulations! You can move to the "Create a GitHub account" part:) If not, here's a quick description how to install "Git for Windows":
 
-During the installation, you can leave the most of the installation options as they are, but I'd recommend choosing your code editor of choice as Git's default editor, changing the default behavior or "git pull" to "Rebase", and Overriding the default branch name for new repositories to `main`, since that's what GitHub uses. There will be a description how to set up the default branch name later in these instructions, but since we have the option now, we might as well use it.
+During the installation, you can leave the most of the installation options as they are, but I'd recommend choosing your code editor of choice as Git's default editor and Overriding the default branch name for new repositories to `main`, since that's what GitHub uses. There will be a description how to set up the default branch name later in these instructions, but since we have the option now, we might as well use it.
 
 ### Linux
 
@@ -62,7 +62,7 @@ There are a bunch of things you can change here, like colors used to highlight c
 ``` bash
 git config --global user.name "Your Name Goes Here"
 git config --global user.email youremail@goes.here
-git config --global pull.rebase true
+git config --global pull.rebase false
 git config --global init.defaultBranch main
 ```
 
